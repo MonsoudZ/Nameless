@@ -1,8 +1,9 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 import Form from "./Form";
+import { useParams } from "react-router";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -21,6 +22,20 @@ export default function NewComment() {
 
   // History
   const history = useHistory();
+  const { id } = useParams();
+
+  useEffect(() => {
+    const newComment = async () => {
+      const res = await axios.get(`${URL}/${id}`, config);
+      const { fields } = res.data;
+      setName(fields.name);
+      setComment(fields.comment);
+      setCategory(fields.category);
+    };
+  newComment();
+    // eslint-disable-next-line
+  }, []);
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
