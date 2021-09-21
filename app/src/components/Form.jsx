@@ -26,7 +26,7 @@ export default function Form(props) {
         onChange={(e) => props.setCategory(e.target.value)} />
      
       <br />
-      <button disabled={checkIfDisabled()}>{props.type}Finish</button>
+      <button class="bg-green-500 active:bg-green-700 ..."disabled={checkIfDisabled()}>{props.type}Finish</button>
     </form>
   );
 }

@@ -10,5 +10,5 @@ export default function DeleteButton(props) {
     history.push("/names");
   };
 
-  return <button onClick={handleDelete}>Delete</button>;
+  return <button class="bg-red-500 hover:bg-red-700 ..."onClick={handleDelete}>Delete</button>;
 }
