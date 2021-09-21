@@ -48,7 +48,7 @@ export default function EditComment() {
 
     const res = await axios.put(`${URL}/${id}`, { fields }, config);
     toast("Updated Info");
-    history.push(`/teams/${res.data.id}`);
+    history.push(`/nameless/${res.data.id}`);
   };
 
   return (

@@ -1,9 +1,10 @@
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 import Form from "./Form";
-import { useParams } from "react-router";
+
+
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -20,22 +21,9 @@ export default function NewComment() {
   const [comment, setComment] = useState("");
   const [category, setCategory] = useState("");
 
+
   // History
   const history = useHistory();
-  const { id } = useParams();
-
-  useEffect(() => {
-    const newComment = async () => {
-      const res = await axios.get(`${URL}/${id}`, config);
-      const { fields } = res.data;
-      setName(fields.name);
-      setComment(fields.comment);
-      setCategory(fields.category);
-    };
-  newComment();
-    // eslint-disable-next-line
-  }, []);
-
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,12 +31,12 @@ export default function NewComment() {
       name,
       comment,
       category,
-    
     };
 
+    console.log(fields)
     const res = await axios.post(URL, { fields }, config);
-    toast("Created Info");
-    history.push(`/names/${res.data.id}`);
+    toast("Created Comment");
+    history.push(`/nameless/${res.data.id}`);
   };
 
   return (
@@ -59,10 +47,10 @@ export default function NewComment() {
         setName={setName}
         comment={comment}
         setComment={setComment}
-        category={category}
+      category={category}
         setCategory={setCategory}
         handleSubmit={handleSubmit}
-        type={"Create"}
+        // type={"Create"}
       />
     </div>
   );

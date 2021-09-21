@@ -20,8 +20,8 @@ export const fetchComment = async (id) => {
   return res.data;
 };
 
-export const newComment = async (id,fields) => {
-  const res = await axios.post(`${URL}/${id}`, { fields }, config)
+export const newComment = async (fields) => {
+  const res = await axios.post(`${URL}`, { fields }, config)
   return (res.data.fields)
 }
 
