@@ -7,19 +7,19 @@ import Details from "./components/Details";
 import NewComment from "./components/NewComment";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import "tailwindcss/tailwind.css"
-
-
+import "tailwindcss/tailwind.css";
+import { Link } from "react-router-dom";
+import DropDown from "./components/DropDown"
 
 
 function App() {
-      return (
-        <div className="App">
-          <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-blue-400 mb-3">
-  <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
-    <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-      <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
-     <Route exact path="/"><div>Nameless</div></Route>
+  return (
+    <div className="App">
+          <nav className="items-center justify-between px-1 py-1 bg-blue-400 mb-3">
+  <div className="container px-4 mx-auto flex items-center justify-between">
+    <div className="w-full justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
+      <a className="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+    Nameless
       </a>
       <button className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
         <span className="block relative w-6 h-px rounded-sm bg-white"></span>
@@ -27,27 +27,31 @@ function App() {
         <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
       </button>
     </div>
-    <div className="lg:flex flex-grow items-center" id="example-navbar-warning">
-      <ul className="flex flex-col lg:flex-row list-none ml-auto">
+    <div className="items-center" id="example-navbar-warning">
+      <ul className="list-none ml-auto">
           <li className="nav-item">
-            <a className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75" href="#pablo">
-        <button class="bg-green-500 hover:bg-red-500 text-black font-bold py-2 px-4 border border-blue-700 rounded">
- All Comments <Route exact path="/names/:id"></Route>
-</button>
+            <a className="px-2 py-1 items-center text-xs leading-snug text-white hover:opacity-75" href="#pablo">
+        <Link to="/names" class="bg--500 hover:bg-red-300 text-black py-2 px-4 border border-500 rounded">
+            All Comments
+                  </Link>
  </a>
+                  <DropDown>
+
+                  </DropDown>
           </li>
           
       </ul>
     </div>
   </div>
- </nav>
+          </nav>
+          
+
         
            {/* NAVBAR */}
-          <Navbar /> 
+         {/* <Navbar />   */}
 
           {/* ROUTES  */}
           <Route exact path="/">
-            <div>Home</div>
           </Route> 
           <Route exact path="/names">
             <Home />
