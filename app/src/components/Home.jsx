@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchNames } from "../services";
-
 export default function TeamsList() {
   const [name, setName] = useState([]);
 

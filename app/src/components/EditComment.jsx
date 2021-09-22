@@ -4,6 +4,7 @@ import { useHistory } from "react-router";
 import { toast } from "react-toastify";
 import Form from "./Form";
 import axios from "axios";
+import MediaCard from "../services/MediaCard";
 
 const airtableBase = process.env.REACT_APP_AIRTABLE_BASE;
 const airtableKey = process.env.REACT_APP_AIRTABLE_KEY;
@@ -53,7 +54,8 @@ export default function EditComment() {
 
   return (
     <div>
-      <h3>Edit Comment </h3>
+      <h3 class="text-gray-900 text-align-center font-bold text-xl mb-2  boarder border-gray-500">Edit Comment</h3>
+      <br />
       <Form
         name={name}
         setName={setName}
@@ -62,8 +64,8 @@ export default function EditComment() {
         category={category}
         setCategory={setCategory}
         handleSubmit={handleSubmit}
-        type={"Edit"}
-      />
+        type={"Done"}
+        />
     </div>
   );
 }

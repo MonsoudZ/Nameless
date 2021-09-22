@@ -10,5 +10,5 @@ export default function DeleteButton(props) {
     history.push("/names");
   };
 
-  return <button class="bg-red-500 hover:bg-red-700 text-black font-bold py-0 px-1 border border-500 rounded"onClick={handleDelete}>Delete</button>;
+  return <button class="bg-red-500 hover:bg-red-900 text-white font-bold py-2 px-4 rounded-full"onClick={handleDelete}>Delete</button>;
 }

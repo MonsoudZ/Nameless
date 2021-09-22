@@ -4,9 +4,7 @@ import DropDown from "./DropDown"
 export default function Navbar() {
   return (
     <nav>
-      <DropDown>
-
-      </DropDown>
+      <DropDown />
       <Link to="/">
         <h1>NameLess</h1>
       </Link>

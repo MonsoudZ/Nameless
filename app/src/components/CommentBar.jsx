@@ -1,10 +1,10 @@
 function commentBar(props) {
-  const { userName, status, date } = props
+  const {name, status, date } = props
   return (
     <div className="status">
       <div className="user-info">
         <div className="user-text">
-          <p> {userName} </p>
+          <p> {name} </p>
           <p><small>{date}</small></p>
         </div>
       </div>

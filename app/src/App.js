@@ -18,7 +18,7 @@ function App() {
           <nav className="items-center justify-between px-1 py-1 bg-blue-400 mb-3">
   <div className="container px-4 mx-auto flex items-center justify-between">
     <div className="w-full justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-      <a className="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#pablo">
+      <a className="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#nameless">
     Nameless
       </a>
       <button className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
@@ -70,9 +70,6 @@ function App() {
       );
 }
     <div>
-<footer class='w-full text-center border-t border-grey p-4'>
-            This is our footer
-      </footer>
       </div>
 
 export default App;
