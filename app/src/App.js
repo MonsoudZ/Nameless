@@ -1,5 +1,4 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import EditComment from "./components/EditComment";
 import Home from "./components/Home";
 import { Route } from "react-router-dom";
@@ -9,7 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "tailwindcss/tailwind.css";
 import { Link } from "react-router-dom";
-import DropDown from "./components/DropDown"
+
 
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
         <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
       </button>
     </div>
-    <div className="items-center" id="example-navbar-warning">
+    <div className="items-center" id="navbar-warning">
       <ul className="list-none ml-auto">
           <li className="nav-item">
             <a className="px-2 py-1 items-center text-xs leading-snug text-white hover:opacity-75" href="#pablo">

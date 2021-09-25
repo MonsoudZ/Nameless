@@ -24,10 +24,10 @@ export default function Home() {
         {name.map((name) => {
           return (
             <div>
-              <div class=" flex-initial rounded-t-lg p-3 flex justify-center pb-20 pl-6 ">
+              <div class=" flex-initial rounded-t-lg p-3 flex justify-center pb-20 pl-6">
                 <div class=" flex-initial h-20 lg:h-2 lg:w-2 flex rounded-t lg:rounded-t-none lg:rounded-l text-center">
                 </div>
-                <div class=" flex-initial border-r border-b border-l border-gray-800 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b-15 lg:rounded-b-none lg:rounded-r p-3 justify-between leading-normal md:max-w-lg ">
+                <div class=" flex-initial border-r border-b border-l border-gray-800 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b-15 lg:rounded-b-none lg:rounded-r p-3 justify-between leading-normal md:max-w-min ">
                   <div class="flex p-1 flex-initial ">
                     <div class=" w-15 flex-initial ">
                     </div>
