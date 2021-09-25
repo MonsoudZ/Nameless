@@ -2,11 +2,13 @@ import React from "react";
 import { useHistory } from "react-router";
 import { deleteName } from "../services";
 
-export default function DeleteButton(props) {
+export default function Delete(props) {
   const history = useHistory();
 
+  console.log("props")
+  console.log(props.children[1])
   const handleDelete = async () => {
-    await deleteName(props.id);
+    await deleteName(props.children[1]);
     history.push("/names");
   };
 

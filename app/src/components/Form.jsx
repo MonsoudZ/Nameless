@@ -1,4 +1,4 @@
-import DropDown from "./DropDown"
+
 export default function Form(props) {
   const checkIfDisabled = () => {
     // some condition check
@@ -7,10 +7,10 @@ export default function Form(props) {
   return (
     <form onSubmit={props.handleSubmit} class=" w-full ">
       <div class="flex w-full -mx-2 mb-6">
-        <div class="w-full md:w-1/2 px-1 ml-20 mb-6 md:mb-0 text-justify">
+        <div class="w-full md:w-1/2 px-1 ml-20 mb-6 md:mb-0 text-justify font-semibold">
           Name 
           <label class="flex  uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-            <input class="py-1 px-1  bg-gray-200 text-gray-700 border border-gray-200rounded"
+            <input class="py-1 px-1  bg-gray-200 text-gray-700 border border-gray-200 rounded focus:bg-white"
               type="text"
               value={props.name}
               onChange={(e) => props.setName(e.target.value)} />
@@ -18,7 +18,7 @@ export default function Form(props) {
         </div>
       </div>
       <div class="flex -mx-3 mb-6">
-        <div class="w-full md:w-1/2 px-1 ml-20 mb-6 md:mb-0 text-justify">
+        <div class="w-full md:w-1/2 px-1 ml-20 mb-6 md:mb-0 text-justify font-semibold">
           Comment
           <label class="flex uppercase tracking-wide  text-gray-700 text-xs font-bold mb-2" for="text">
             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -29,11 +29,8 @@ export default function Form(props) {
           </label>
         </div>
       </div>
-      <div class="block appearance-none text-left ml-60 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500">
-        <DropDown />
-      </div>
       < br />
-      < button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" disabled={checkIfDisabled()} > {props.type}</button >
+      < button class="bg-transparent hover:bg-red-500 text-white font-semibold hover:text-white py-2 px-4 border hover:border-transparent rounded" disabled={checkIfDisabled()} >{props.type}</button>
     </form>
   )
   }

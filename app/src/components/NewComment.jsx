@@ -41,7 +41,7 @@ export default function NewComment() {
 
   return (
     <div>
-      <h3>Create a new Post </h3>
+      <h3 class="text-gray-900 text-align-center font-bold text-xl mb-2  boarder border-gray-300 pt-4">Create a new Post </h3>
       <Form
         name={name}
         setName={setName}
@@ -50,7 +50,7 @@ export default function NewComment() {
       category={category}
         setCategory={setCategory}
         handleSubmit={handleSubmit}
-        // type={"Create"}
+        type={"Create"}
       />
     </div>
   );
