@@ -24,14 +24,14 @@ export default function Home() {
         {name.map((name) => {
           return (
             <div>
-              <div class=" flex-initial rounded-t-lg p-3 flex justify-center pb-20 pl-6">
-                <div class=" flex-initial h-20 lg:h-2 lg:w-2 flex rounded-t lg:rounded-t-none lg:rounded-l text-center">
+              <div class=" flex-initial sm:relative rounded-t-lg p-3 flex justify-center pb-20 pl-6">
+                <div class=" flex-initial sm:relative h-20 sm:h-2 sm:w-2 flex rounded-t lg:rounded-t-none lg:rounded-l text-center">
                 </div>
-                <div class=" flex-initial border-r border-b border-l border-gray-800 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b-15 lg:rounded-b-none lg:rounded-r p-3 justify-between leading-normal md:max-w-min ">
-                  <div class="flex p-1 flex-initial ">
-                    <div class=" w-15 flex-initial ">
+                <div class=" flex-initial border-r border-b border-l border-gray-800 lg:border-l-0 lg:border-t lg:border-gray-400 bg-white rounded-b-15 lg:rounded-b-none lg:rounded-r p-3 justify-between leading-normal sm:max-w-min ">
+                  <div class="flex sm:relative p-1 flex-initial ">
+                    <div class=" w-15 sm:relative flex-initial ">
                     </div>
-                    <form class="flex-wrap flex-initial ">
+                    <form class="flex-wrap sm: max-w-min flex-initial ">
                       <div class="flex-wrap items-baseline flex-initial ">
                         <h1 class="flex text-yellow-900 font-bold mb-2.5">
                           {name.fields.name}
@@ -61,33 +61,4 @@ export default function Home() {
   }
 
           
-                {/* <div class="flex items-baseline my-8">
-                  <div class="space-x-2 flex text-sm font-medium">
-                    <label>
-                      <input class="w-9 h-9 flex items-center justify-center rounded-full bg-purple-700 text-white" name="size" type="radio" value="xs" checked>
-                        XS
-                      </input>
-                    </label>
-                    <label>
-                      <input class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-gray-200" name="size" type="radio" value="s">
-                        S
-                      </input>
-                    </label>
-                    <label>
-                      <input class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-gray-200" name="size" type="radio" value="m">
-                        M
-                      </input>
-                    </label>
-                    <label>
-                      <input class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-gray-200" name="size" type="radio" value="l">
-                        L
-                      </input>
-                    </label>
-                    <label>
-                      <input class="w-9 h-9 flex items-center justify-center rounded-full border-2 border-gray-200" name="size" type="radio" value="xl">
-                        XL
-                      </input>
-                    </label>
-                  </div> */}
-
 

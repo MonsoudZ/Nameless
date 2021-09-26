@@ -14,26 +14,22 @@ import { Link } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-          <nav className="items-center justify-between px-2 py-4  mb-3">
-  <div className="container px-4 mx-auto flex items-center justify-between">
+          <nav className=" sm:container md:container items-center justify-between px-2 py-4 mb-3 ">
+  <div className="sm:text-text-lg container sm:w-82 sm:bg-red-900 px-4 mx-auto flex items-center justify-between ">
     <div className="w-full justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
-      <a className="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#nameless">
+      <a className="text-sm leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white" href="#torch">
    Torch
       </a>
-      <button className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button">
-        <span className="block relative w-6 h-px rounded-sm bg-white"></span>
-        <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
-        <span className="block relative w-6 h-px rounded-sm bg-white mt-1"></span>
-      </button>
+     
     </div>
     <div className="items-center" id="navbar-warning">
-      <ul className="list-none ml-auto">
+      <ul className=" sm:bg-blue-400 list-none ml-auto align-middle">
           <li className="nav-item">
             <a className="px-2 py-1 items-center text-xs leading-snug text-white hover:opacity-75" href="#pablo">
         <Link to="/new" class="bg--500 hover:bg-red-800 text-white py-2 px-4 border border-500 rounded pr-6">
           New Comment
                   </Link> 
-                  <Link to="/names" class="bg--500 hover:bg-red-800 text-white  py-2 px-4 border border-500 rounded pl-6">
+                  <Link to="/names" class=" bg--500 hover:bg-red-800 text-white  py-2 px-4 border border-500 rounded pl-6 ">
           All Comments
           </Link>
  </a>
