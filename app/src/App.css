@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -22,3 +19,26 @@
   color: white;
 }
 
+.NavContainer {
+  width: 100%;
+}
+
+.buttonCon {
+  width: 300px;
+}
+
+@media screen and (max-width: 500px) {
+  .NavContainer {
+    background-color: #116466;
+  }
+}
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #116466;
+  }
+}
+@media screen and (max-width: 500px) {
+  .CommentMedia {
+    min-width:min-content;
+  }
+}
