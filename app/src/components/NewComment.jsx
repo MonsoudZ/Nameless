@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
 import { useHistory } from "react-router";
-import { toast } from "react-toastify";
 import Form from "./Form";
 
 
@@ -35,7 +34,6 @@ export default function NewComment() {
 
     console.log(fields)
     const res = await axios.post(URL, { fields }, config);
-    toast("Created Comment");
     history.push(`/nameless/${res.data.id}`);
   };
 

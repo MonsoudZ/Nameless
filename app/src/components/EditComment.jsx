@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { useHistory } from "react-router";
-import { toast } from "react-toastify";
 import Form from "./Form";
 import axios from "axios";
 
@@ -47,7 +46,6 @@ export default function EditComment() {
     };
 
     const res = await axios.put(`${URL}/${id}`, { fields }, config);
-    toast("Updated Info");
     history.push(`/nameless/${res.data.id}`);
   };
 

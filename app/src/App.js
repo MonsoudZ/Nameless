@@ -5,8 +5,6 @@ import Home from "./components/Home";
 import { Route } from "react-router-dom";
 import Details from "./components/Details";
 import NewComment from "./components/NewComment";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -30,7 +28,6 @@ function App() {
       <Route path="/names/:id/edit">
         <EditComment />
       </Route>
-      <ToastContainer />
     </div>
   );
 }
